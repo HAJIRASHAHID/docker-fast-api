@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+fastapi
+uvicorn
+python-dotenv
+pinecone
+requests
+groq
+pymupdf
+transformers==4.40.2
+sentence-transformers==2.7.0
+torch==2.2.2
+numpy==1.26.4

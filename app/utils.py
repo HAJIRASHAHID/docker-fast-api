@@ -13,8 +13,8 @@ def extract_text_from_pdf(path: str) -> str:
     doc.close()
     return "\n\n".join(text)
 
-#chunk text (larger default chunk to reduce total chunks)
-def chunk_text(text: str, chunk_size: int = 2000, overlap: int = 300) -> list:
+#chunk text
+def chunk_text(text: str, chunk_size: int = 500, overlap: int = 100) -> list:
     if not text:
         return []
     text = text.strip()
